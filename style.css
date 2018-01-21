@@ -31,18 +31,17 @@ body {
 }
 
 h1, #myIntro, b {
-    font-family: Montserrat;
     font-size: 40px;
-    background-color: azure;
-    font-weight: bold;
 }
 
 h1, #myIntro, p {
-    font-family: Montserrat;
-    font-size: 10px;
-    background-color: azure;
+    font-size: 16px;
 }
 
+b {
+    font-weight: bold;
+    text-shadow: white 5px 5px 20px;
+}
 #myIntro {
 /*  width: 50px;*/
 /*  height: 50px;*/
@@ -51,9 +50,23 @@ animation-name: intro;
 animation-duration: 2s;
 animation-iteration-count: 1;
 animation-fill-mode: forwards;
+padding-left: 20px;
+padding-right: 20px;
+
 }
 
 @keyframes intro {
-    0%   {left:0px; top:0px;}
-    100% {left:20px; top:0px;}
+    0%   {background-color: #DEE2E2; left:0px; top:0px;}
+    100% {background-color: #DEE2E2; left:20px; top:0px;}
+}
+
+#line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1%;
+    background-color: red;
+    
+    /*  background: linear-gradient(white, azure);*/
 }
