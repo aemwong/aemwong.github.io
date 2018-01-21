@@ -14,8 +14,7 @@
 
 body {
     overflow-x:hidden;
-    font-family: Montserrat;
-        
+    font-family: Montserrat;    
 }
 
 #myVideo {
@@ -71,7 +70,10 @@ margin-bottom: 20px;
   bottom: 2%;
   height: 0.5%;
 /*    background: linear-gradient(white, #639fff);*/
-    background-color: black;
-    
-    /*  background: linear-gradient(white, azure);*/
+  background-color: black;
 }
+
+.modal-title {
+    font-size: 20px;
+}
+

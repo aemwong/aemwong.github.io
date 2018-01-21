@@ -10,36 +10,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
-    </head>
     
 <script>
-    // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    
 </script>
+    
+</head>
+    
+<body>
     
 <!-- navbar tingsss-->
 <nav class="navbar navbar-default">
@@ -80,7 +61,7 @@ window.onclick = function(event) {
       <div id="myIntro"><h1><b> hi! I'm Alison :)
          </b></h1>
         <p> I'm currently studying Systems Design Engineering at the University of Waterloo. <br><br>
-        Previously, I've worked as a <a href="thing" id="hyperlink">Product  Management Coop</a> at Tulip Retail & an <a href="thing again" id="hyperlink">Agile Test Engineer</a> at Pivotal Labs.
+        Previously, I've worked as a <a href="thing" id="hyperlink" data-toggle="modal" data-target="#TulipModal">Product  Management Coop</a> at Tulip Retail & an <a href="thing again" id="hyperlink" data-toggle="modal" data-target="#PivotalModal">Agile Test Engineer</a> at Pivotal Labs.
         <br><br>
         I'm always open to learning new things and meeting new people and learning new things. Shoot me an email if you'd like more information or if you'd like to have a chat!  
           </p></div>
@@ -88,9 +69,50 @@ window.onclick = function(event) {
   </div>
 </div>
 
-<!--    LINE-->
-<!--    <div id="line"></div>-->
-    
+<!-- Tulip Modal -->
+<div class="modal fade" id="TulipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Product Management Coop, </strong><i>Tulip Retail,</i> Kitchener, Ontario</h5>
+      </div>
+      <div class="modal-body">
+          <img src="tulip-retail-logo.png" align="middle" width=100% height=90%>
+          <br>
+          <ul>
+             <li>Wrote backlog of detailed user stories on Phabricator and communicated with teams to clarify blocks and to ensure features were working as expected</li>
+             <li>Ran daily scrums, prioritized features, assigned work for sprints according to estimates and deadlines given for the upcoming release to presented at NRF
+             <li>presented internal demos to new hires and acted as guide helping them familiarize themselves with the product; maintained documentation for new releases </li>
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Pivotal Modal    -->
+<div class="modal fade" id="PivotalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Agile Test Engineer, </strong><i>Pivotal Labs,</i> Toronto, Ontario</h5>
+      </div>
+      <div class="modal-body">
+          <img src="pivotal-labs-logo.png" align="middle" width=100% height=100%>
+          <br><br><br>
+          <ul>
+              <li>Wrote UI tests on EarlGrey framework for iOS simulators using Objective-C and Swift covering several main features </li>
+              <li>Tested daily builds for mobile apps in agile testing environment to discover showstopper bugs before release dates </li>
+              <li>Communicated with product managers and developers internationally to verify new release features and fix bugs </li>
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     
 <!--    this is the end DON'T DELETE-->
 </body>  
