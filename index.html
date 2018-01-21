@@ -13,10 +13,35 @@
 
     </head>
     
+<script>
+    // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
     
-<body onload="myMove()">
 <!-- navbar tingsss-->
-    
 <nav class="navbar navbar-default">
   <div class="container pos-rel">
     <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
@@ -24,7 +49,9 @@
       </button>
       
     <div class="navbar-header">
-     <a class="navbar-brand" href="#">LOGO HERE</a>
+     <a class="navbar-brand" href="javascript:window.location.reload();">
+          <span class="glyphicon glyphicon-home"></span>
+        </a></a>
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -53,7 +80,7 @@
       <div id="myIntro"><h1><b> hi! I'm Alison :)
          </b></h1>
         <p> I'm currently studying Systems Design Engineering at the University of Waterloo. <br><br>
-        Previously, I've worked as a Product  Management Coop at Tulip Retail & an Agile Test Engineer at Pivotal Labs.
+        Previously, I've worked as a <a href="thing" id="hyperlink">Product  Management Coop</a> at Tulip Retail & an <a href="thing again" id="hyperlink">Agile Test Engineer</a> at Pivotal Labs.
         <br><br>
         I'm always open to learning new things and meeting new people and learning new things. Shoot me an email if you'd like more information or if you'd like to have a chat!  
           </p></div>
