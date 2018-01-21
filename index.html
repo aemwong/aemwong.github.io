@@ -8,20 +8,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
-      
     </head>
     
     
-<body> 
+<body onload="myMove()">
 <!-- navbar tingsss-->
     
 <nav class="navbar navbar-default">
@@ -44,38 +37,30 @@ function closeNav() {
   </div>
 </nav>    
 
-<!--column tings-->
+<!--Video/Intro-->
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <div align="center" class="embed-responsive embed-responsive-16by9">
         <video autoplay muted class="embed-responsive-item" id="myVideo">
-        <source src="Name%20MP4.mp4" type="video/mp4">
+        <source src="Name%20Callig.mp4" type="video/mp4">
         </video>
       </div>
     </div>
-    <div class="col-sm-4" style="background-color:azure";>
-      <h1> hi! My name is Alison </h1>
+    <div class="col-sm-5">
+      <div id="myIntro"><h1><b> hi! I'm Alison :)
+         </b></h1>
+        <p> I'm currently studying Systems Design Engineering at the University of Waterloo. <br><br>
+        Previously, I've worked as a Product  Management Coop at Tulip Retail & an Agile Test Engineer at Pivotal Labs.
+        <br><br>
+        I'm always open to learning new things and meeting new people and learning new things. Shoot me an email if you'd like more information or if you'd like to have a chat!  
+          </p></div>
       </div>
   </div>
 </div>
-    
-    <div class="container">
-      <h1>Alison Wong.</h1>
-      <p><small>design, dev, SYDE.</small></p> 
-    </div>
- <div class="container">
-    <div class="row" style="background-color:azure;">
-    <div class="container">
-     <h1>hhhheyo buddy how goes it<br>
-     </h1>
-    </div>
-        </div>
-     </div>
 
-    
-<!--    overlay ting-->
-    
+<!--    LINE-->
+    <div id="line"></div>
     
     
 <!--    this is the end DON'T DELETE-->

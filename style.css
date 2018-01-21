@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .pos-rel{ position:relative;}
 /*body {  min-width:600px; }*/
@@ -8,17 +10,63 @@ body{
    _width: expression( document.body.clientWidth > 1000 ? "1000px" : "auto" );  sets max-width for IE6 
 }
 */
+* {
+ font-size: 100%;
+ font-family: Lato;
+}
+
 body {
-    overflow-x:hidden
+    overflow-x:hidden;
+    font-family: Montserrat;
+        
 }
 
 #myVideo {
     left: 0;
-/*    right: 0;*/
     top: -10;
-/*    bottom: 0;*/
     min-width: 100%; 
     min-height: 100%;
     max-height: 768px;
     opacity: .8;
+}
+
+h1, #myIntro, b {
+    font-size: 40px;
+}
+
+h1, #myIntro, p {
+    font-size: 16px;
+}
+
+b {
+    font-weight: bold;
+    text-shadow: white 5px 5px 20px;
+}
+#myIntro {
+/*  width: 50px;*/
+/*  height: 50px;*/
+  position: absolute;
+animation-name: intro;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+@keyframes intro {
+    0%   {background-color: #DEE2E2; left:0px; top:0px;}
+    100% {background-color: #DEE2E2; left:20px; top:0px;}
+}
+
+#line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1%;
+    background-color: red;
+    
+    /*  background: linear-gradient(white, azure);*/
 }
