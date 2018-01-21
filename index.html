@@ -12,39 +12,31 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-      
-<script>
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-    
-</script>
-    
-</head>
+    <script src="https://use.fontawesome.com/246b51f37b.js"></script>
+    </head>
     
 <body>
     
 <!-- navbar tingsss-->
 <nav class="navbar navbar-default">
   <div class="container pos-rel">
+<!--
     <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
         <span class="glyphicon glyphicon-th-list"></span>
       </button>
+-->
       
-    <div class="navbar-header">
-     <a class="navbar-brand" href="javascript:window.location.reload();">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="javascript:window.location.reload();">
           <span class="glyphicon glyphicon-home"></span>
-        </a></a>
-    </div>
+        </a>
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+            <a href="https://www.behance.net/aewong" id="projects" target="_blank">Projects</a>
+          </li> 
+      </ul>      
+      </div>
 
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.behance.net/aewong" target="_blank">Projects</a></li> 
-        <li><a href="#">Contact</a></li> 
-      </ul>
-    </div>
-  </div>
 </nav>    
 
 <!--Video/Intro-->
@@ -55,7 +47,6 @@ $('#myModal').on('shown.bs.modal', function () {
       <div align="center" class="embed-responsive embed-responsive-16by9">
         <video autoplay muted class="embed-responsive-item" id="myVideo">
         <source src="Name%20Callig.mp4" poster="name%20callig.jpg"/>
-</video>
         </video>
       </div>
     </div>
@@ -66,11 +57,18 @@ $('#myModal').on('shown.bs.modal', function () {
         Previously, I've worked as a <a href="thing" id="hyperlink" data-toggle="modal" data-target="#TulipModal">Product  Management Coop</a> at Tulip Retail & an <a href="thing again" id="hyperlink" data-toggle="modal" data-target="#PivotalModal">Agile Test Engineer</a> at Pivotal Labs.
         <br><br>
         I'm always open to learning new things and meeting new people and learning new things. Shoot me an email if you'd like more information or if you'd like to have a chat!  
-            
-          </p></div>
-      </div>
-  </div>
-</div>
+        <br><br>
+        <div id="icons">
+            <a href="https://www.github.com/aemwong" target="_blank"><i class="fa fa-github" aria-hidden="true"></a></i> 
+            <a href="AlisonWong_Resume.pdf" target="_blank"> 
+            <i class="fa fa-file-text" aria-hidden="true"></i></a>
+            </p>
+    </div>
+    </div>
+    </div>
+</div>           
+
+
 
 <!-- Tulip Modal -->
 <div class="modal fade" id="TulipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -117,6 +115,13 @@ $('#myModal').on('shown.bs.modal', function () {
   </div>
 </div>
     
-<!--    this is the end DON'T DELETE-->
+<!--    Scripts      -->
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
+    
+    
 </body>  
 </html>
