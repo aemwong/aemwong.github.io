@@ -54,7 +54,7 @@ b {
     font-weight: bold;
     text-shadow: white 5px 5px 20px;
 }
-#hyperlink {
+.hyperlink {
     color: #5990ea
 }
 
