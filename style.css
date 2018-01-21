@@ -2,14 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .pos-rel{ position:relative;}
-/*body {  min-width:600px; }*/
 
-/*
-body{
-   min-width:1000px; // Suppose you want minimum width of 1000px
-   _width: expression( document.body.clientWidth > 1000 ? "1000px" : "auto" );  sets max-width for IE6 
+.container {
+    padding-right: 200px;
 }
-*/
+
 * {
  font-size: 100%;
  font-family: Lato;
@@ -52,21 +49,25 @@ animation-iteration-count: 1;
 animation-fill-mode: forwards;
 padding-left: 20px;
 padding-right: 20px;
-
+padding-bottom: 20px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
 }
 
 @keyframes intro {
-    0%   {background-color: #DEE2E2; left:0px; top:0px;}
-    100% {background-color: #DEE2E2; left:20px; top:0px;}
+    0%   {background-color: #DEE2E2; left:0px; top:0px; right:20px}
+    100% {background-color: #DEE2E2; left:20px; top:0px; right:0px}
 }
 
 #line {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 1%;
-    background-color: red;
+  bottom: 2%;
+  height: 0.5%;
+/*    background: linear-gradient(white, #639fff);*/
+    background-color: black;
     
     /*  background: linear-gradient(white, azure);*/
 }
