@@ -54,8 +54,16 @@ b {
     font-weight: bold;
     text-shadow: white 5px 5px 20px;
 }
-.hyperlink {
-    color: #5990ea
+.hyperlink:link {
+    color: #499bb6;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.hyperlink:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color:#63d8ff;
 }
 
 #myIntro {
