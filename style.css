@@ -56,19 +56,35 @@ b {
 }
 .hyperlink:link {
     color: #499bb6;
-    font-style: oblique;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hyperlink:visited {
+    color: #499bb6;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .hyperlink:hover {
-    font-weight: 600;
     text-decoration: none;
     color:#63d8ff;
 }
 
+#hello {
+    animation: fadeIn 5s 1;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    width=1;
+}
+
+
 #myIntro {
     position: absolute;
-    animation-name: intro;
+    animation-name: rightSlide;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -80,10 +96,31 @@ b {
     margin-bottom: 20px;
 }
 
-@keyframes intro {
-    0%   {background-color: #DEE2E2; left:0px; top:0px; right:20px}
-    100% {background-color: #DEE2E2; left:20px; top:0px; right:0px}
+#title,#name {
+        font-weight: bold;
+    font-size: 60px; 
+     text-align: center;
+    vertical-align:bottom;
 }
+
+#name {
+    animation: fadeIn 2s 1, rightSlide 2s 1;
+    animation-delay:1s;
+    padding: 0px;
+    animation-fill-mode: both;
+}
+
+@keyframes rightSlide {
+    0%   {left:0px; top:0px; right:20px}
+    100% {left:20px; top:0px; right:0px}
+}
+
+@keyframes fadeIn {
+    0%  {opacity:0;}
+    100%{opacity:1;}
+}
+
+/*
 
 @keyframes pulse {
     0% { transform: scale(1); }
@@ -105,21 +142,24 @@ b {
     background-color: white;
     
 }
+*/
 
 #icons {
-    font-size: 25px;
-    color: black;
+    font-size: 30px;
+    color: #499bb6;
+    text-align: right;
 }
 
+/*
 #line {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 2%;
+  position: sticky;
+    width: 100%
+    bottom: 10px;
   height: 0.5%;
-/*    background: linear-gradient(white, #639fff);*/
+background: linear-gradient(white, #639fff);
   background-color: black;
 }
+*/
 
 .modal-title {
     font-size: 20px;
@@ -131,6 +171,7 @@ b {
 
 .navbar-nav>li, .navbar-nav {
   float: right !important;
+        padding-right: 10px;
 }
 
 .navbar-nav.navbar-right:last-child {
