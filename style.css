@@ -3,13 +3,21 @@
 
 .pos-rel{ position:relative;}
 
-.container {
-    padding-right: 200px;
-}
 
 * {
- font-size: 100%;
- font-family: Futura
+    font-size: 100%;
+    font-family: Futura
+}
+
+h1 {
+    font-weight: bold !important;
+    font-size: 30px ;
+}
+
+h6 {
+    font-size: 20px !important;
+    font-style: oblique;
+    line-height: 25px !important;
 }
 
 body {
@@ -17,64 +25,71 @@ body {
     font-family: Futura    
 }
 
-#myVideo {
-    left: 0;
-    top: -10;
-    min-width: 100%; 
-    min-height: 100%;
-    max-height: 768px;
-    opacity: .8;
-}
-
-/* Default display the image to replace the video on all devices */
-#videosubstitute {
-    display:block;
-    width:100%;
-    height:auto
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    #myVideo {display:block;}
-    #videosubstitute {display:none};
-}
-
-
-h1, #myIntro, b {
-    font-size: 40px;
-    font-style: normal;
-}
-
-h1, #myIntro, p {
-    font-size: 16px;
-    font-weight: 100;
+p {
+    font-size: 20px !important;
 }
 
 b {
     font-weight: bold;
-    text-shadow: white 5px 5px 20px;
 }
+
+
+
+
+.highlight {
+    color: blue;
+}
+
 .hyperlink:link {
-    color: #009ace;
-    font-weight: bold;
+    color: #009ace !important;
+    font-style: oblique;
     text-decoration: none;
 }
 
 .hyperlink:visited {
-    color: #009ace;
-    font-weight: bold;
+    color: #009ace !important;
+    font-style: oblique;
     text-decoration: none;
 }
 
 .hyperlink:hover {
     text-decoration: none;
-    color:#63d8ff;
+    color:#63d8ff !important;
+    border-color: #63d8ff !important;
+}
+
+#outerHeader {
+    height: 100vh;
+    position: static;
+}
+
+.innerContainer {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#aboutContainer{
+    padding: 2% 5% 2% 5%;
+    margin: 0;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+#aboutPic{
+    max-width: 300px;
+}
+
+#aboutPic, #aboutBlurb {
+    padding: 20px;
 }
 
 #hello {
     position: relative;
     animation: fadeIn 5s 1, rightSlide 2s 1;
-    padding: 10% 10% 2% 10%;
+    padding: 5% 10% 2% 10%;
     text-align: center;
     max-width: 900px;
     margin: 0 auto !important;
@@ -85,33 +100,17 @@ img {
     font-size: 30px;
 }
 
-/*
-#myIntro {
-    position: absolute;
-    animation-name: rightSlide;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-*/
-
 #name {
     position: relative;
     font-weight: bold;
     font-size: 60px; 
+    line-height: 65px;
     text-align: center;
-    vertical-align:bottom;
+    vertical-align: bottom;
     animation: fadeIn 2s 1, rightSlide 2s 1;
-    animation-delay:1s;
+    animation-delay: 1s;
     padding: 0 10% 2% 10%;
     animation-fill-mode: both;
-    line-height: 65px;
 }
 
 #introBlurb {
@@ -123,17 +122,34 @@ img {
     margin: 0 auto !important;
     float: none !important;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 27px;
 }
 
-@keyframes rightSlide {
-    0%   {left:-20px; top:0px; right:0px}
-    100% {left:0px; top:0px; right:0px}
+#resume {
+    font-size: 25px !important;
+    font-style: normal !important;
+    padding: 5px 10px !important;
+    border-color: #009ace;
+    border-width:medium;
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto !important;
+    float: none !important;
+    width: 240px !important;
+    color: #009ace;
 }
 
-@keyframes fadeIn {
-    0%  {opacity:0;}
-    100%{opacity:1;}
+#credit {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 10px;
+/*    background-color: black;*/
+    color: white;
+    background-color: black;
+/*    background-image: linear-gradient(rgba(232, 232, 232, 1), rgba(200, 200, 200, 1));*/
 }
 
 /*
@@ -160,11 +176,23 @@ img {
 }
 */
 
-#icons {
+#icons, #iconsAbout {
     font-size: 40px;
     text-align: center;
-    padding: 10px;
+    padding: 3vw;
 }
+
+#iconsAbout {
+    text-align: baseline;
+    padding-top: 1vw !important;
+    padding-bottom: 1vw !important;
+    vertical-align: bottom;
+}
+
+#iconsLink {
+    margin: 2vw;
+}
+
 
 
 /*
@@ -177,6 +205,16 @@ background: linear-gradient(white, #639fff);
   background-color: black;
 }
 */
+
+@keyframes rightSlide {
+    0%   {left:-20px; top:0px; right:0px}
+    100% {left:0px; top:0px; right:0px}
+}
+
+@keyframes fadeIn {
+    0%  {opacity:0;}
+    100%{opacity:1;}
+}
 
 .modal-title {
     font-size: 20px;
