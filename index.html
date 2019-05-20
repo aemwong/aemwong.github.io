@@ -41,29 +41,63 @@
 <!--Video/Intro-->
 
 <div class="container-fluid">
-    <div class="row">
-        <div id="hello">
-            <img src="hello-Animation.gif" id="gif" alt="Hello!" width="100%">
-        </div>
-        <div id="name">
-            I'm Alison &#X263A
-        </div>
-        <div id="introBlurb">
-        say "hello" to a bit of what I've been up to recently
-            <div id="icons">
-                <a href="https://www.linkedin.com/in/aewong/" id="iconsLink" target="_blank" class="hyperlink">
-                    <i class="fab fa-linkedin"></i></a>
-                <a href="https://www.behance.net/aewong" id="iconsLink" target="_blank" class="hyperlink"> 
-                    <i class="fab fa-behance-square"></i></a>
-                <a href="https://www.github.com/aemwong" id="iconsLink" target="_blank" class="hyperlink">
-                    <i class="fab fa-github-square"></i></a> 
-                <a href="mailto:alison.wong@edu.uwaterloo.ca" id="iconsLink" target="_blank" class="hyperlink"> 
-                    <i class="fas fa-envelope-square"></i></a>
-
+    <div class="row" id="outerHeader">
+        <div class="innerContainer">
+            <div id="hello">
+                <img src="hello-Animation.gif" id="gif" alt="Hello!" width="100%">
+            </div>
+            <div id="name">
+                I'm Alison &#X263A
+            </div>
+            <div id="introBlurb">
+            say "hello" to a bit of what I've been up to recently
+                <div id="icons">
+                    <a href="https://www.linkedin.com/in/aewong/" id="iconsLink" target="_blank" class="hyperlink">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/aewong" id="iconsLink" target="_blank" class="hyperlink"> 
+                        <i class="fab fa-behance-square"></i></a>
+                    <a href="https://www.github.com/aemwong" id="iconsLink" target="_blank" class="hyperlink">
+                        <i class="fab fa-github-square"></i></a> 
+                    <a href="mailto:alison.wong@edu.uwaterloo.ca" id="iconsLink" target="_blank" class="hyperlink"> 
+                        <i class="fas fa-envelope-square"></i></a>
+                    </div>
             </div>
         </div>
-       
     </div>
+</div>
+    
+<div class="row" id="aboutContainer">
+    <h1> About Me</h1>
+    <div class="col-sm-4"><img src="about.jpg" width="100%" id="aboutPic">
+    </div>
+    <div class="col-sm-8">
+        <p id="aboutBlurb">
+        I'm a Systems Design Engineering student at the University of Waterloo with an <i>eye for design</i> and a <i>passion for development</i> to create the best user experience for products.
+        <br><br>
+            Outside of work and school, you might catch me singing with the <a class="hyperlink" target="_blank" href="https://www.youtube.com/user/TheAcaBellas">UW AcaBellas</a>, serving at<a class="hyperlink" target="_blank" href="https://www.uwccf.com/"> UWCCF </a> or doodling<a class="hyperlink" target="_blank" href="https://www.instagram.com/aw.doodles/"> "hello" </a>on pieces of paper.
+        <br>
+        </p>
+        <h6>Currently, I'm looking for a 4-month internship for the Fall 2019 term.<br>Contact me so we can share our first "hello"!</h6>
+        
+        
+                    <div id="iconsAbout">
+                    <a href="https://www.linkedin.com/in/aewong/" id="iconsLink" target="_blank" class="hyperlink">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/aewong" id="iconsLink" target="_blank" class="hyperlink"> 
+                        <i class="fab fa-behance-square"></i></a>
+                    <a href="https://www.github.com/aemwong" id="iconsLink" target="_blank" class="hyperlink">
+                        <i class="fab fa-github-square"></i></a> 
+                    <a href="mailto:alison.wong@edu.uwaterloo.ca" id="iconsLink" target="_blank" class="hyperlink"> 
+                        <i class="fas fa-envelope-square"></i></a>
+                        <br>
+                        <a href="AlisonWong_May2019_Resume.pdf" target="_blank" class="hyperlink" id="resume">Resume <i class="fas fa-file"></i></a>
+                    </div>
+        </div>    
+    </div>
+<div class="row" id="credit">
+    Website created by Alison Wong &#X270C	
+    </div>
+
 <!--
         <div class="container-fluid">
             <div id="hello">
@@ -111,7 +145,7 @@
 
 
         
-          <div id="line"></div>
+<!--          <div id="line"></div>-->
 
 <!--
 <div class="About">
@@ -210,12 +244,16 @@
     
     
 <!--    Scripts      -->
-        <script>
-        $('#myModal').on('shown.bs.modal', function () {
-          $('#myInput').trigger('focus')
-        })
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 
-        $('#gif')[0].src = "hello-Animation.gif"+"?a="+Math.random();
+$('#gif')[0].src = "hello-Animation.gif"+"?a="+Math.random();
 
-            </script>
+    
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
     </html>
