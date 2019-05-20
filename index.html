@@ -3,28 +3,26 @@
   <head>
     <title>Alison Wong</title>
     <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="AW_logo-01.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src="https://use.fontawesome.com/246b51f37b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    
     </head>
     
 <body>
     
 <!-- navigation bar -->
+<!--
 <nav class="navbar navbar-default">
   <div class="container pos-rel">
-<!--
     <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
         <span class="glyphicon glyphicon-th-list"></span>
       </button>
--->
       
       <div class="navbar-header">
         <a class="navbar-brand" href="javascript:window.location.reload();">
@@ -38,26 +36,34 @@
       </div>
 
 </nav>    
+-->
 
 <!--Video/Intro-->
 
-    <div class="container-fluid">
-        <div class="row">
-  <div id="hello">
-            <img src="Hello.png" align="middle" width="80%">
-            </div>
-  <div id="name">
-            I'm Alison &#X263A
-            </div>
-</div>
-        <div class="row">
-                <p> I'm a Systems Design Engineering student at the University of Waterloo with an eye for design and a passion for development to create the best user experience for products.
-        <div id="icons">
-            <a href="https://www.github.com/aemwong" target="_blank" class="hyperlink"><i class="fa fa-github" aria-hidden="true"></a></i> 
-            <a href="pm_final.pdf" target="_blank" class="hyperlink"> 
-            <i class="fa fa-file-text" aria-hidden="true"></i></a>
-        </p>
+<div class="container-fluid">
+    <div class="row">
+        <div id="hello">
+            <img src="hello-Animation.gif" id="gif" alt="Hello!" width="100%">
         </div>
+        <div id="name">
+            I'm Alison &#X263A
+        </div>
+        <div id="introBlurb">
+        say "hello" to a bit of what I've been up to recently
+            <div id="icons">
+                <a href="https://www.linkedin.com/in/aewong/" id="iconsLink" target="_blank" class="hyperlink">
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="https://www.behance.net/aewong" id="iconsLink" target="_blank" class="hyperlink"> 
+                    <i class="fab fa-behance-square"></i></a>
+                <a href="https://www.github.com/aemwong" id="iconsLink" target="_blank" class="hyperlink">
+                    <i class="fab fa-github-square"></i></a> 
+                <a href="mailto:alison.wong@edu.uwaterloo.ca" id="iconsLink" target="_blank" class="hyperlink"> 
+                    <i class="fas fa-envelope-square"></i></a>
+
+            </div>
+        </div>
+       
+    </div>
 <!--
         <div class="container-fluid">
             <div id="hello">
@@ -69,8 +75,7 @@
             </div>
         </div>
 -->
-    </div>
-        <div class="row">
+ 
 <!--
         <div class="col-sm-7">
       <div align="center" class="embed-responsive embed-responsive-16by9">
@@ -103,8 +108,8 @@
         <br><br>
 -->
             
-    </div>
-    </div>
+
+
         
           <div id="line"></div>
 
@@ -115,9 +120,8 @@
     </p>
     </div>
 -->
-    </div> 
+
     
-    </div>
     
     
 <!-- OpenText Modal -->
@@ -201,16 +205,17 @@
   </div>
 </div>    
 
+</body>  
 
     
     
 <!--    Scripts      -->
-<script>
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-</script>
-    
-    
-</body>  
-</html>
+        <script>
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+        })
+
+        $('#gif')[0].src = "hello-Animation.gif"+"?a="+Math.random();
+
+            </script>
+    </html>

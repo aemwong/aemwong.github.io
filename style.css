@@ -55,13 +55,13 @@ b {
     text-shadow: white 5px 5px 20px;
 }
 .hyperlink:link {
-    color: #499bb6;
+    color: #009ace;
     font-weight: bold;
     text-decoration: none;
 }
 
 .hyperlink:visited {
-    color: #499bb6;
+    color: #009ace;
     font-weight: bold;
     text-decoration: none;
 }
@@ -72,16 +72,20 @@ b {
 }
 
 #hello {
-    animation: fadeIn 5s 1;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 0px;
+    position: relative;
+    animation: fadeIn 5s 1, rightSlide 2s 1;
+    padding: 10% 10% 2% 10%;
     text-align: center;
-    width=1;
+    max-width: 900px;
+    margin: 0 auto !important;
+    float: none !important;
 }
 
+img {
+    font-size: 30px;
+}
 
+/*
 #myIntro {
     position: absolute;
     animation-name: rightSlide;
@@ -95,24 +99,36 @@ b {
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
-#title,#name {
-        font-weight: bold;
-    font-size: 60px; 
-     text-align: center;
-    vertical-align:bottom;
-}
+*/
 
 #name {
+    position: relative;
+    font-weight: bold;
+    font-size: 60px; 
+    text-align: center;
+    vertical-align:bottom;
     animation: fadeIn 2s 1, rightSlide 2s 1;
     animation-delay:1s;
-    padding: 0px;
+    padding: 0 10% 2% 10%;
     animation-fill-mode: both;
+    line-height: 65px;
+}
+
+#introBlurb {
+    animation: fadeIn 2s 1;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    padding: 0% 10% 2% 10%;
+    max-width: 1000px;
+    margin: 0 auto !important;
+    float: none !important;
+    text-align: center;
+    font-size: 20px;
 }
 
 @keyframes rightSlide {
-    0%   {left:0px; top:0px; right:20px}
-    100% {left:20px; top:0px; right:0px}
+    0%   {left:-20px; top:0px; right:0px}
+    100% {left:0px; top:0px; right:0px}
 }
 
 @keyframes fadeIn {
@@ -145,10 +161,11 @@ b {
 */
 
 #icons {
-    font-size: 30px;
-    color: #499bb6;
-    text-align: right;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
 }
+
 
 /*
 #line {
