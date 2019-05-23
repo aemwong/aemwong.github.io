@@ -43,7 +43,7 @@ h6 {
 
 body {
     overflow-x:hidden;
-    font-family: Futura    
+    font-family: Futura;
 }
 
 p {
@@ -52,13 +52,6 @@ p {
 
 b {
     font-weight: bold;
-}
-
-
-
-
-.highlight {
-    color: blue;
 }
 
 .hyperlink:link {
@@ -92,16 +85,65 @@ b {
     transform: translateY(-50%);
 }
 
+.jobContainer {
+/*    padding: 5vh;*/
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobTitle {
+/*    padding: 0 2vw 0px 2vw;*/
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.jobBlurb {
+    padding: 0px 3vw;
+    font-style: italic
+    font-size: 20px;
+}
+
+.seeMore {
+    font-size: 30px;
+    color: #009ace;
+    padding-top: 3vh;
+}
+
 #accedoContainer {
+    padding: 5vh 10vw;
     background-color: #b8edff;
     text-align: center;
 }
 
 #accedoIcon {
     width: 50%;
-    margin: 5vh auto;
-    max-width: 300px;
+/*    margin: ;*/
+    max-width: 250px;
     
+}
+
+@media (max-width: 978px) {
+    #accedoIcon {
+        margin: 5vh 0;
+    }
+    .seeMore {
+        padding-top: 1vh;
+    }
+/*
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+*/
 }
 
 #aboutContainer{
@@ -249,9 +291,31 @@ background: linear-gradient(white, #639fff);
     100%{opacity:1;}
 }
 
-.modal-title {
-    font-size: 20px;
+#accedoLine {
+    height: 20px;
+    background-color: #b8edff;
 }
+
+#heihei {
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.close {
+    margin-right: 4px;
+}
+
+.modal-body {
+    font-size: 16px;
+}
+#accedoModal .modal-header {
+    height: 20px;
+    background-color: #b8edff;
+}
+
+
 
 .navbar-collapse.collapse {
   display: block!important;
