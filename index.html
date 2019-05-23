@@ -4,6 +4,7 @@
     <title>Alison Wong</title>
     <meta charset="UTF-8"> 
     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="animate.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="AW_logo-01.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,11 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
-    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
     </head>
     
 <body>
-    
+
+<div class="se-pre-con"></div>
 <!-- navigation bar -->
 <!--
 <nav class="navbar navbar-default">
@@ -65,6 +69,55 @@
         </div>
     </div>
 </div>
+    
+<div class="row" id="accedoContainer">
+    <div class="col-sm-5">
+        <img src="AccedoLogoIcon.png" id="accedoIcon">
+    </div>
+    <div class="col-sm-7" >
+        <div class="jobContainer">
+            <div class="jobTitle">
+                product integration engineer @ accedo
+                </div>
+            <div class="jobBlurb"><p>
+                designing user interfaces to meet customer requirements.
+                </p></div>
+            <div class="seeMore">
+                <a href="#" class="hyperlink" data-toggle="modal" data-target="#accedoModal">
+                    read more <i class="fas fa-external-link-square-alt"></i></a><br>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<!-- Accedo Modal -->
+<div class="modal fade" id="accedoModal" tabindex="-1" role="dialog" aria-labelledby="LongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+<!--          <div class="modal-header"></div>-->
+          <div id="accedoLine"></div>
+      <div class="modal-body">
+          <i>Product Integration Engineer @ Accedo <br>Jan 2019 - Apr 2019</i>
+          <br><br> 
+          In my role, I had the chance to work on <i>Studio Pro</i>, a proprietary product that designs and builds user interfaces in video applications. I was placed on several projects including Hallmark, the CW, and HEIHEI. One of the screens that I implemented can be seen below: 
+          <br><br> <img src="HEIHEI_screen.jpg" alt="Heihei iOS" id="heihei"> <br>
+          On an average day, you would find me:
+          <ul>
+              <li>designing user interfaces on <i>Studio Pro</i></li>
+              <li>implementing third-party integrations like Brightcove and NeuLion with a developer</li>
+              <li>analyzing customer requirements and discussing custom development integration approach with other product integration engineers</li>
+              <li>testing interfaces on multiple platforms like iOS, Android, Web, Roku, FireTV and more</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
     
 <div class="row" id="aboutContainer">
     <h1> About Me</h1>
@@ -133,14 +186,12 @@
         </p>
     </div>
 -->
-<!--
             
             <br><br>
             Previously, I've worked as a <a href="#" class="hyperlink" data-toggle="modal" data-target="#OpenTextModal">Software Developer</a> at OpenText, a <a href="#" class="hyperlink" data-toggle="modal" data-target="#TulipModal">Product  Management Coop</a> at Tulip Retail & an <a href="#" class="hyperlink" data-toggle="modal" data-target="#PivotalModal">Agile Test Engineer</a> at Pivotal Labs.
         <br><br>
         I'm always open to learning new things and meeting new people and learning new things. Shoot me an email if you'd like more information or if you'd like to have a chat!  
         <br><br>
--->
             
 
 
@@ -245,12 +296,51 @@
     
 <!--    Scripts      -->
 <script>
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+//$('#accedoModal').on('shown.bs.modal', function () {
+//    $('#myInput').trigger('focus')
+//})
 
 $('#gif')[0].src = "hello-Animation.gif"+"?a="+Math.random();
 
+$('html, body').css({
+  'overflow': 'hidden',
+  'height': '100%'
+})
 
+    
+//    
+//$('#accedoModal').on('show.bs.modal', function (e) {
+////    $("body").addClass("modal-open");
+//
+//$('#element').on('scroll touchmove mousewheel', function(e){
+//  e.preventDefault();
+//  e.stopPropagation();
+//  return false;
+//})
+//});
+    
+//$('#accedoModal').on('show.bs.modal', function (e) {
+////    $("body").addClass("modal-open");
+//    $('html, body').css({
+//    overflow: 'hidden',
+//    height: '100%'
+//});
+//})
+//    
+//$('#accedoModal').on('hide.bs.modal', function (e) {
+////  $("body").removeClass("modal-open")
+//    $('html, body').css({
+//    overflow: 'auto',
+//    height: 'auto'
+//});
+//})
+    
+$(document).ready(function() {
+    $('html, body').css({
+    'overflow': 'auto',
+    'height': 'auto'
+    })
+    $('.se-pre-con').fadeOut("slow");;
+});
 </script>
     </html>
