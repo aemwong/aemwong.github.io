@@ -269,19 +269,6 @@ img {
     margin: 2vw;
 }
 
-
-
-/*
-#line {
-  position: sticky;
-    width: 100%
-    bottom: 10px;
-  height: 0.5%;
-background: linear-gradient(white, #639fff);
-  background-color: black;
-}
-*/
-
 @keyframes rightSlide {
     0%   {left:-20px; top:0px; right:0px}
     100% {left:0px; top:0px; right:0px}
