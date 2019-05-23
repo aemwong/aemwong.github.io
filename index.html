@@ -12,11 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
-    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
     </head>
     
 <body>
-    
+
+    <div class="se-pre-con"></div>
 <!-- navigation bar -->
 <!--
 <nav class="navbar navbar-default">
@@ -260,6 +263,17 @@ $('#myModal').on('shown.bs.modal', function () {
 
 $('#gif')[0].src = "hello-Animation.gif"+"?a="+Math.random();
 
-
+$('html, body').css({
+  'overflow': 'hidden',
+  'height': '100%'
+})
+    
+$(document).ready(function() {
+    $('html, body').css({
+    'overflow': 'auto',
+    'height': 'auto'
+    })
+    $('.se-pre-con').fadeOut("slow");;
+});
 </script>
     </html>
