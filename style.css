@@ -112,38 +112,43 @@ b {
     padding-top: 3vh;
 }
 
+#opentextContainer {
+    background-color: #65d9ff;
+}
+
 #accedoContainer {
-    padding: 5vh 10vw;
     background-color: #b8edff;
+}
+    #accedoContainer,  #opentextContainer {
+    padding: 5vh 10vw;
     text-align: center;
 }
 
 #accedoIcon {
     width: 50%;
-/*    margin: ;*/
     max-width: 250px;
     
 }
 
+#opentextIcon {
+    margin: 5vh 0;
+    width: 50%;
+    max-width: 250px;   
+}
+
+.seeMore .hyperlink:hover {
+    color: white !important;
+}
+
 @media (max-width: 978px) {
-    #accedoIcon {
+    #accedoIcon, #opentextIcon {
         margin: 5vh 0;
     }
+    
+    
     .seeMore {
         padding-top: 1vh;
     }
-/*
-
-    body {
-      padding:0;
-    }
-
-    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom:0;
-    }
-*/
 }
 
 #aboutContainer{
@@ -291,6 +296,11 @@ background: linear-gradient(white, #639fff);
     100%{opacity:1;}
 }
 
+#opentextLine {
+    height: 20px;
+    background-color: #65d9ff;
+}
+
 #accedoLine {
     height: 20px;
     background-color: #b8edff;
@@ -310,12 +320,6 @@ background: linear-gradient(white, #639fff);
 .modal-body {
     font-size: 16px;
 }
-#accedoModal .modal-header {
-    height: 20px;
-    background-color: #b8edff;
-}
-
-
 
 .navbar-collapse.collapse {
   display: block!important;
