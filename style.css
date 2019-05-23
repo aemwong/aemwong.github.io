@@ -86,7 +86,6 @@ b {
 }
 
 .jobContainer {
-/*    padding: 5vh;*/
     align-items: center;
     text-align: left;
     vertical-align: middle;
@@ -95,25 +94,37 @@ b {
 }
 
 .jobTitle {
-/*    padding: 0 2vw 0px 2vw;*/
     font-size: 35px;
     line-height: 40px;
+    text-align: center;
 }
 
 .jobBlurb {
     padding: 0px 3vw;
-    font-style: italic
+    font-style: italic;
     font-size: 20px;
+    padding-bottom: 3vh;
+    text-align: center;
 }
 
 .seeMore {
     font-size: 30px;
     color: #009ace;
-    padding-top: 3vh;
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+    
+#opentextContainer .jobTitle {
+    margin-top: 40px;
+}
+
+#tulipContainer .jobTitle {
+    margin-top: 40px;
 }
 
 #tulipContainer {
-    background-color: #65d9ff;
+    background-color: #26c9ff;
 }
 
 #opentextContainer {
@@ -124,35 +135,42 @@ b {
     background-color: #b8edff;
 }
 
-#accedoContainer,  #opentextContainer, #tulipContainer {
+#pivotalContainer {
+    background-color: #00b3ef;
+}
+
+#accedoContainer,  #opentextContainer, #tulipContainer, #pivotalContainer {
     padding: 5vh 10vw;
     text-align: center;
 }
 
-#accedoIcon {
+.jobIcon {
     width: 50%;
     max-width: 250px;
 }
 
-#opentextIcon {
-    margin: 5vh 0;
-    width: 50%;
-    max-width: 250px;   
-}
 
-.seeMore .hyperlink:hover {
-    color: white !important;
-}
-
-@media (max-width: 978px) {
+@media (max-width: 768px) {
     #accedoIcon, #opentextIcon {
         margin: 5vh 0;
     }
     
-    
-    .seeMore {
-        padding-top: 1vh;
+    .jobBlurb {
+        padding-bottom: 1vh;
+        text-align: left;
     }
+    
+    .jobTitle {
+        text-align: left;
+    }
+
+    #tulipContainer .jobTitle {
+    margin-top: 0px;
+    }
+ 
+    #opentextContainer .jobTitle {
+    margin-top: 0px;
+}
 }
 
 #aboutContainer{
@@ -300,6 +318,16 @@ background: linear-gradient(white, #639fff);
     100%{opacity:1;}
 }
 
+#pivotalLine {
+    height: 20px;
+    background-color: #00b3ef;
+}
+
+#tulipLine {
+    height: 20px;
+    background-color: #26c9ff;
+}
+
 #opentextLine {
     height: 20px;
     background-color: #65d9ff;
@@ -313,6 +341,13 @@ background: linear-gradient(white, #639fff);
 #heihei {
     width: 50%;
     max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+#followups {
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     display: block;
 }
