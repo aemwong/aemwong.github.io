@@ -42,8 +42,7 @@
 </nav>    
 -->
 
-<!--Video/Intro-->
-
+<!--Intro-->
 <div class="container-fluid">
     <div class="row" id="outerHeader">
         <div class="innerContainer">
@@ -70,9 +69,10 @@
     </div>
 </div>
     
+<!-- Accedo Section    -->
 <div class="row" id="accedoContainer">
     <div class="col-sm-5">
-        <img src="AccedoLogoIcon.png" id="accedoIcon">
+        <img src="AccedoLogoIcon.png" class="jobIcon" id="accedoIcon">
     </div>
     <div class="col-sm-7" >
         <div class="jobContainer">
@@ -115,9 +115,10 @@
   </div>
 </div>
 
+<!--  Opentext Section -->
 <div class="row" id="opentextContainer">
     <div class="col-sm-5">
-        <img src="opentextLogoIcon.png" id="opentextIcon">
+        <img src="opentextLogoIcon.jpg" class="jobIcon" id="opentextIcon">
     </div>
     <div class="col-sm-7" >
         <div class="jobContainer">
@@ -159,7 +160,104 @@
     </div>
   </div>
 </div>
+
+<!-- Tulip Section -->
+<div class="row" id="tulipContainer">
+    <div class="col-sm-5">
+        <img src="tulipLogoIcon.png" class="jobIcon" id="tulipIcon">
+    </div>
+    <div class="col-sm-7" >
+        <div class="jobContainer">
+            <div class="jobTitle">
+                product management coop @ tulip
+                </div>
+            <div class="jobBlurb"><p>
+                improving existing modules to better meet customer requirements.
+                </p></div>
+            <div class="seeMore" id="tulipMore">
+                <a href="#" class="hyperlink" data-toggle="modal" data-target="#tulipModal">
+                    read more <i class="fas fa-external-link-square-alt"></i></a><br>
+            </div>
+        </div>  
+    </div>
+</div>    
+
+<!-- Tulip Modal -->
+<div class="modal fade" id="tulipModal" tabindex="-1" role="dialog" aria-labelledby="LongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <div id="tulipLine"></div>
+      <div class="modal-body">
+          <i>Product Management Coop @ Tulip<br>Sep 2017 - Dec 2017</i>
+          <br><br>
+          At Tulip Retail, I was able to manage several pods (teams) working on different features of the app in preparation for the National Retail Federation conference taking place in the beginning of 2018.
+          <br><br>
+          I am especially proud of being able to lead the "Follow-Ups" pod to revamp the module found within the Clienteling section of the application. The follow-ups module was not being used by many of Tulip's customers so with the designers, we took some time to address the issues of the module. Some of these issues included the outdated look of the module and implementing push notifications to remind customer service representatives of their overdue followups. Below are the "before" and "after" screenshots of the module: 
+          <br><br>
+          <img src="FollowUpsBefore.png" alt="FollowUps: Before" id="followups"><br>
+          <img src="FollowUpsAfter.png" alt="FollowUps: After" id="followups"><br>
+          
+          On an average day, you would find me:
+          <ul>
+             <li>writing a backlog of detailed user stories on both Phabricator and Visual Studio Team Services, while communicating with teams to clarify blocks and to ensure features were working as expected</li>
+             <li>running daily scrums, prioritizing features, assigning work to both developers and designers for sprints according to estimates and deadlines given
+             <li>presenting internal demos to new hires and acting as guide helping them familiarize themselves with the product</li>
+             <li>maintaining and updating documentation to ensure that information was available for any employee who might need clarification on the functionality and implementation of any feature</li>
+          </ul>
+              </div>
+    </div>
+  </div>
+</div>
     
+<!-- Pivotal Labs Section -->
+<div class="row" id="pivotalContainer">
+    <div class="col-sm-5">
+        <img src="pivotallabsLogoIcon.png" class="jobIcon" id="pivotalIcon">
+    </div>
+    <div class="col-sm-7" >
+        <div class="jobContainer">
+            <div class="jobTitle">
+                agile test engineer @ pivotal labs
+                </div>
+            <div class="jobBlurb"><p>
+                automating ui tests to catch regression bugs in continuous integration. 
+                </p></div>
+            <div class="seeMore" id="pivotalMore">
+                <a href="#" class="hyperlink" data-toggle="modal" data-target="#pivotalModal">
+                    read more <i class="fas fa-external-link-square-alt"></i></a><br>
+            </div>
+        </div>  
+    </div>
+</div>    
+
+<!-- Pivotal Modal -->
+<div class="modal fade" id="pivotalModal" tabindex="-1" role="dialog" aria-labelledby="LongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <div id="pivotalLine"></div>
+      <div class="modal-body">
+          <i>Agile Test Engineer @ Pivotal Labs<br>Jan 2017 - Apr 2017</i>
+          <br><br>
+            At Pivotal Labs, I was working on the Exploratory Testing Team, mainly testing features on the mobile FordPass UK and Lincoln app.
+              <br><br> 
+              On an average day, you would find me:
+          <ul>
+              <li>writing UI tests on the EarlGrey framework for iOS simulators using Objective-C and Swift covering several main features to ensure that there were no regression bugs or minor UI bugs </li>
+              <li>manually testing  daily builds in the agile testing environment to discover showstopper bugs before release dates </li>
+              <li>communicating with product managers and developers worldwide to verify new release features and fix bugs </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
     
 <div class="row" id="aboutContainer">
     <h1> About Me</h1>
@@ -193,156 +291,12 @@
     Website created by Alison Wong &#X270C	
     </div>
 
-<!--
-        <div class="container-fluid">
-            <div id="hello">
-                
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div id="myIntro">
-            </div>
-        </div>
--->
- 
-<!--
-        <div class="col-sm-7">
-      <div align="center" class="embed-responsive embed-responsive-16by9">
-        <video autoplay muted class="embed-responsive-item" id="myVideo">
-        <source src="Name%20Callig.mp4" poster="name%20callig.jpg"/>
-        <img src="name%20callig.jpg" id="videosubstitute" alt="">
-          </video>
-      </div>
-    </div>
--->
-<!--
-<div class="container">
-    <div class="col-sm-5">
-        <div id="myIntro"><h1><b>I'm Alison &#X263A
-         </b></h1>
-        <p> I'm a Systems Design Engineering student at the University of Waterloo with an eye for design and a passion for development to create the best user experience for products.
-        <div id="icons">
-            <a href="https://www.github.com/aemwong" target="_blank" class="hyperlink"><i class="fa fa-github" aria-hidden="true"></a></i> 
-            <a href="pm_final.pdf" target="_blank" class="hyperlink"> 
-            <i class="fa fa-file-text" aria-hidden="true"></i></a>
-        </p>
-    </div>
--->
-            
-<!--
-            <br><br>
-            Previously, I've worked as a <a href="#" class="hyperlink" data-toggle="modal" data-target="#OpenTextModal">Software Developer</a> at OpenText, a <a href="#" class="hyperlink" data-toggle="modal" data-target="#TulipModal">Product  Management Coop</a> at Tulip Retail & an <a href="#" class="hyperlink" data-toggle="modal" data-target="#PivotalModal">Agile Test Engineer</a> at Pivotal Labs.
-        <br><br>
-        I'm always open to learning new things and meeting new people and learning new things. Shoot me an email if you'd like more information or if you'd like to have a chat!  
-        <br><br>
-            
--->
-
-
-        
-<!--          <div id="line"></div>-->
-
-<!--
-<div class="About">
-    <p>  
-          Currently I'm looking for a 4-month internship for the Fall 2019 term. Contact me if you'd like to have a chat!
-    </p>
-    </div>
--->
-
-    
-    
-    
-<!-- OpenText Modal -->
-<div class="modal fade" id="OpenTextModal" tabindex="-1" role="dialog" aria-labelledby="LongTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-          <h5 class="modal-title" id="LongTitle"><strong>Software Developer, </strong><i>OpenText,</i> Waterloo, Ontario</h5>
-      </div>
-      <div class="modal-body">
-        <img src="opentext-logo.png" align="middle" width=100% height=90%>
-          <br>
-          <br>
-          At OpenText, I was working on the Exstream development team, who specializes in a content authoring platform for their customers.
-          <br><br>
-          On an average day, you would find me:
-          <ul>
-              <li>enhancing and implementing changes to the internal framework functions used in scripts running in Continuous Integration</li>
-              <li>composing UI scripts in Python and Visual Basic to test patches of customer-identified defects</li>
-              <li>testing the product's robustness</li>
-              <li>analyzed and verified test results through JSON, XML, PDF, PNG, TXT, and more, eliminating unexpected behaviour and double checking written code</li>
-          </ul>
-      </div>
-    </div>
-  </div>
-</div>
-    
-<!-- Tulip Modal -->
-<div class="modal fade" id="TulipModal" tabindex="-1" role="dialog" aria-labelledby="LongTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-          <h5 class="modal-title" id="LongTitle"><strong>Product Management Coop, </strong><i>Tulip Retail,</i> Kitchener, Ontario</h5>
-      </div>
-      <div class="modal-body">
-        <img src="tulip-retail-logo.png" align="middle" width=100% height=90%>
-          <br>
-          At Tulip Retail, I was able to manage several pods (teams) working on different features of the app in preparation for the National Retail Federation conference taking place in the beginning of 2018.
-          <br><br>
-          On an average day, you would find me:
-          <ul>
-             <li>writing a backlog of detailed user stories on both Phabricator and Visual Studio Team Services, while communicating with teams to clarify blocks and to ensure features were working as expected</li>
-             <li>running daily scrums, prioritizing features, assigning work to both developers and designers for sprints according to estimates and deadlines given
-             <li>presenting internal demos to new hires and acting as guide helping them familiarize themselves with the product</li>
-             <li>maintaining and updating documentation to ensure that information was available for any employee who might need clarification on the functionality and implementation of any feature</li>
-          </ul>
-      </div>
-    </div>
-  </div>
-</div>
-    
-<!--Pivotal Modal    -->
-<div class="modal fade" id="PivotalModal" tabindex="-1" role="dialog" aria-labelledby="LongTitle" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-          <h5 class="modal-title" id="LongTitle"><strong>Agile Test Engineer, </strong><i>Pivotal Labs,</i> Toronto, Ontario</h5>
-      </div>
-      <div class="modal-body">
-        <img src="pivotal-labs-logo.png" align="middle" width=100% height=100%>
-          <br><br><br>
-          <ul>
-            At Pivotal Labs, I was working on the Exploratory Testing Team, mainly testing features on the mobile FordPass UK and Lincoln app.
-              <br><br> 
-              On an average day, you would find me:
-              <li>writing UI tests on the EarlGrey framework for iOS simulators using Objective-C and Swift covering several main features to ensure that there were no regression bugs or minor UI bugs </li>
-              <li>manually testing  daily builds in the agile testing environment to discover showstopper bugs before release dates </li>
-              <li>communicating with product managers and developers worldwide to verify new release features and fix bugs </li>
-          </ul>
-      </div>
-    </div>
-  </div>
-</div>    
-
 </body>  
 
     
     
 <!--    Scripts      -->
 <script>
-//$('#accedoModal').on('shown.bs.modal', function () {
-//    $('#myInput').trigger('focus')
-//})
 
 $('#gif')[0].src = "hello-Animation.gif"+"?a="+Math.random();
 
@@ -350,34 +304,6 @@ $('html, body').css({
   'overflow': 'hidden',
   'height': '100%'
 })
-
-    
-//    
-//$('#accedoModal').on('show.bs.modal', function (e) {
-////    $("body").addClass("modal-open");
-//
-//$('#element').on('scroll touchmove mousewheel', function(e){
-//  e.preventDefault();
-//  e.stopPropagation();
-//  return false;
-//})
-//});
-    
-//$('#accedoModal').on('show.bs.modal', function (e) {
-////    $("body").addClass("modal-open");
-//    $('html, body').css({
-//    overflow: 'hidden',
-//    height: '100%'
-//});
-//})
-//    
-//$('#accedoModal').on('hide.bs.modal', function (e) {
-////  $("body").removeClass("modal-open")
-//    $('html, body').css({
-//    overflow: 'auto',
-//    height: 'auto'
-//});
-//})
     
 $(document).ready(function() {
     $('html, body').css({
