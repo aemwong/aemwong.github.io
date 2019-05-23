@@ -71,6 +71,19 @@ b {
     transform: translateY(-50%);
 }
 
+#accedoContainer {
+    background-color: #b8edff;
+}
+
+#accedoIcon {
+    width: 50%;
+/*    margin: 50px 100px;*/
+    margin: 5vh auto;
+    max-width: 300px;
+    text-align: center;
+    
+}
+
 #aboutContainer{
     padding: 2% 5% 2% 5%;
     margin: 0;
