@@ -131,7 +131,7 @@ b {
     background-color: #65d9ff;
 }
 
-#accedoContainer {
+#accedoContainer, #projects {
     background-color: #b8edff;
 }
 
@@ -248,35 +248,9 @@ img {
     font-size: 15px;
     text-align: center;
     padding: 20px 10px;
-/*    background-color: black;*/
     color: white;
     background-color: black;
-/*    background-image: linear-gradient(rgba(232, 232, 232, 1), rgba(200, 200, 200, 1));*/
 }
-
-/*
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-	30% { transform: scale(1); }
-	40% { transform: scale(1.08); }
-	50% { transform: scale(1); }
-	60% { transform: scale(1); }
-	70% { transform: scale(1.05); }
-	80% { transform: scale(1); }
-	100% { transform: scale(1); }
-}
-
-#loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    animation: pulse;
-    animation-iteration-count: infinite;
-    background-color: white;
-    
-}
-*/
 
 #icons, #iconsAbout {
     font-size: 40px;
