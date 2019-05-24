@@ -1,8 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-.pos-rel{ position:relative;}
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/FuturaLT.woff") format('woff');
+}
 
-/* Loading Screen*/
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/FuturaLT-Bold.woff") format('woff');
+    font-weight: bold;
+}
 
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/FuturaLT-Oblique.woff") format('woff');
+    font-style: oblique;
+}
+
+.pos-rel{ 
+    position: relative;
+}
+
+html,body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Futura', 'Roboto', sans-serif;
+}
+
+* {
+    font-size: 100%;
+    font-family: 'Futura', 'Roboto', sans-serif;
+}
+
+/* Loading Screen */
 .no-js #loader { 
     display: none;  
 }
@@ -25,11 +59,6 @@
     overflow: hidden;
 }
 
-* {
-    font-size: 100%;
-    font-family: Futura
-}
-
 h1 {
     font-weight: bold !important;
     font-size: 30px ;
@@ -39,11 +68,6 @@ h6 {
     font-size: 20px !important;
     font-style: oblique;
     line-height: 25px !important;
-}
-
-body {
-    overflow-x:hidden;
-    font-family: Futura;
 }
 
 p {
@@ -101,7 +125,7 @@ b {
 
 .jobBlurb {
     padding: 0px 3vw;
-    font-style: italic;
+    font-style: oblique;
     font-size: 20px;
     padding-bottom: 3vh;
     text-align: center;
@@ -170,14 +194,15 @@ b {
  
     #opentextContainer .jobTitle {
     margin-top: 0px;
-}
+    }
 }
 
 #aboutContainer{
     padding: 2% 5% 2% 5%;
-    margin: 0;
+    margin: 0 auto;
     background-color: #e8e8e8;
     text-align: center;
+    width: 100%;
 }
 
 #aboutPic{
