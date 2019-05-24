@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: "Futura";
-    src: url("fonts/FuturaLT.woff") format('woff');
+    src: url("Fonts/FuturaLT.woff") format('woff');
 }
 
 @font-face {
     font-family: "Futura";
-    src: url("fonts/FuturaLT-Bold.woff") format('woff');
+    src: url("Fonts/FuturaLT-Bold.woff") format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Futura";
-    src: url("fonts/FuturaLT-Oblique.woff") format('woff');
+    src: url("Fonts/FuturaLT-Oblique.woff") format('woff');
     font-style: oblique;
 }
 
@@ -72,6 +72,7 @@ h6 {
 
 p {
     font-size: 20px !important;
+    text-align: center;
 }
 
 b {
@@ -155,7 +156,7 @@ b {
     background-color: #65d9ff;
 }
 
-#accedoContainer, #projects {
+#accedoContainer, #project1 {
     background-color: #b8edff;
 }
 
@@ -173,6 +174,18 @@ b {
     max-width: 250px;
 }
 
+.sectionHeaders {
+    padding: 1% 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color: #ffecbe;
+}
+
+#project1 {
+    padding: 3% 0 2% 0;
+    line-height: 20px;
+}
 
 @media (max-width: 768px) {
     #accedoIcon, #opentextIcon {
@@ -199,7 +212,7 @@ b {
 
 #aboutContainer{
     padding: 2% 5% 2% 5%;
-    margin: 0 auto;
+    margin: 0 auto;;
     background-color: #e8e8e8;
     text-align: center;
     width: 100%;
