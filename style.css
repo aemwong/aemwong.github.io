@@ -171,6 +171,10 @@ b {
     text-align: center;
 }
 
+.projectIcon {
+    width: 100%;
+}
+
 .jobIcon {
     width: 50%;
     max-width: 250px;
@@ -187,7 +191,7 @@ b {
 }
 
 @media (max-width: 768px) {
-    #accedoIcon, #opentextIcon {
+    #accedoIcon, #opentextIcon, #projectIcon {
         margin: 5vh 0;
     }
     
